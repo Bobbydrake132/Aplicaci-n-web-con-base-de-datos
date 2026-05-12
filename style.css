@@ -1,0 +1,135 @@
+/* Configuración General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Imagen de fondo sobre MTB */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                      url('https://images.unsplash.com/photo-1544191696-102dbdaeeaa0?auto=format&fit=crop&q=80&w=1920');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+/* Contenedor Principal */
+.main-container {
+    width: 90%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.site-header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    filter: invert(1); /* Hace que el logo sea blanco */
+    margin-right: 20px;
+}
+
+/* Cuerpo */
+.content-body {
+    padding: 60px 20px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.video-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #e67e22; /* Color naranja deportivo */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.video-link:hover {
+    background-color: #d35400;
+}
+
+/* Footer */
+.site-footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    font-size: 0.9rem;
+    border-top: 2px solid #e67e22;
+}
+
+.info-personal p {
+    margin-bottom: 5px;
+}
+
+.info-personal a {
+    color: #e67e22;
+    text-decoration: none;
+}
+.crud-form {
+    margin-bottom: 30px;
+    background: rgba(0,0,0,0.4);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.crud-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.05);
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    text-align: left;
+}
+
+th {
+    background: rgba(230, 126, 34, 0.8);
+}
+
+.btn-action {
+    color: #e67e22;
+    text-decoration: none;
+    font-size: 0.8rem;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.btn-del {
+    color: #e74c3c;
+}
